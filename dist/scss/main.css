@@ -63,6 +63,57 @@ body {
   padding: 1.5rem;
 }
 
+.footer {
+  background-color: hsl(0, 0%, 100%);
+}
+.footer__wrapper .footer__social ul {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.footer__wrapper .footer__social ul li a {
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  background: rgb(10, 10, 10);
+  padding: 1rem;
+  border-radius: 5rem;
+  width: 4.5rem;
+  text-align: center;
+}
+.footer__text {
+  display: block;
+}
+.footer__text .privacy ul {
+  display: block;
+}
+.footer__text .privacy ul li {
+  margin-bottom: 2rem;
+}
+.footer__text .privacy ul li a {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.footer__text .privacy ul li:hover a {
+  -webkit-text-decoration: underline rgb(92, 84, 84);
+          text-decoration: underline rgb(92, 84, 84);
+}
+.footer__text p {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 1080px) {
+  .footer__text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__text .privacy ul {
+    display: flex;
+  }
+  .footer__text .privacy ul li {
+    margin-right: 2rem;
+    margin-bottom: unset;
+  }
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -340,71 +391,6 @@ body {
 }
 .links__social ul li:hover a {
   color: black;
-}
-@media screen and (min-width: 768px) {
-  .links .footer {
-    width: 750px;
-  }
-  .links__drop {
-    margin: 0;
-    display: flex;
-    align-items: start;
-    gap: 8rem;
-  }
-  .links__drop__item:not(:first-child), .links__drop__item:not(:last-child) {
-    margin: 0;
-  }
-  .links__drop__item h4 {
-    pointer-events: none;
-  }
-  .links__drop__item h4 i {
-    display: none;
-  }
-  .links__drop__item ul {
-    max-height: 25rem;
-    margin: 1rem 0;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .links__wrapper {
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 1.5fr;
-    grid-gap: 2rem;
-  }
-  .links__drop {
-    margin: 0;
-    display: flex;
-    align-items: start;
-    gap: 8rem;
-  }
-  .links__drop__item:not(:first-child), .links__drop__item:not(:last-child) {
-    margin: 0;
-  }
-  .links__drop__item h4 {
-    pointer-events: none;
-  }
-  .links__drop__item h4 i {
-    display: none;
-  }
-  .links__drop__item ul {
-    max-height: 25rem;
-    margin: 1rem 0;
-  }
-  .links__social ul {
-    justify-content: flex-end;
-  }
-  .links footer h5 {
-    font-size: 12px;
-  }
-  .links .footer__content ul {
-    max-width: 100%;
-  }
-  .links .footer__content ul li {
-    font-size: 12px;
-  }
-  .links .footer__content p {
-    font-size: 12px;
-  }
 }
 
 /*----------------banner-----------*/
